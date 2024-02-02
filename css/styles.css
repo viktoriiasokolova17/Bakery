@@ -1,49 +1,74 @@
+:root {
+    --color-primary-dark: #31261A;
+    --color-primary-light: #FAF4EA;
+    --color-brand-dark: #465929;
+    --color-brand-light: #819B57;
+}
+
 /*Base*/
+
+body {
+    color: var(--color-primary-dark);
+    font-family: 'Poppins', sans-serif;
+}
 ul {
     list-style-type: none;
 }
 
 /*Button*/
 .button{
-    color: #faf4ea;
-    background-color: #819b57;
-    border: 2px solid #819b57;
+    color: var(--color-primary-light);
+    background-color: var(--color-brand-dark);
+    border: 2px solid var(--color-brand-dark);
     border-radius: 8px;
 }
 
 .button:hover {
-    color: #465929;
+    color: var(--color-brand-dark);
     background-color: transparent;
 }
 
 /*Link*/
 .link {
-    color: #faf4ea;
+    color: var(--color-primary-light);
 }
 
 .link:hover {
-    color: #819b57;
+    color: var(--color-brand-dark);
 }
 
 /*Hero section*/
 .hero-title{
-    color: #faf4ea;
+    color: var(--color-primary-light);
+    text-align: center;
 }
 
 .hero-title .accent {
-    color: #819b57;
+    color: var(--color-brand-dark);
 }
 
 /*Advantages section*/
 .advantages-list{
-color: #faf4ea;
-background-color: #819b57;
+color: var(--color-primary-light);
+background-color: var(--color-brand-dark);
 }
-.section-title{
-    color: #31261a;
-}
-/*Traditions section*/
 
+/* .chefs-section.accent {
+    color: red;
+} */
+
+.section-title .accent{
+    color:var(--color-brand-dark);
+}
+
+
+/*Traditions section*/
+.traditions-text .brand{
+    color: var(--color-brand-light);
+}
+.traditions-text .uppercase{
+    text-transform: uppercase;
+}
 /*Chefs section*/
 
 /*Formats section*/
