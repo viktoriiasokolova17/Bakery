@@ -80,6 +80,7 @@ address {
     color: var(--color-primary-light);
     line-height: 1.5;/*because 27/18, where 27- line-height, 18- font size*/
     text-decoration: none;
+    transition: color 0.3s;
 }
 
 .link:hover {
@@ -88,11 +89,20 @@ address {
 }
 
 /*Header*/
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 .header-container {
     display: flex;
     align-items: center;
     gap: 40px;
 }
+
 .header-nav {
     flex-grow: 1;
     display: flex;
@@ -111,7 +121,7 @@ justify-content: center;
 /*Hero section*/
 .hero-section {
     padding: 272px 0;
-    background-image:url('../images/hero-section-background.jpg');
+    background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%),url('../images/hero-section-background.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -270,9 +280,12 @@ flex-basis: calc((100% - 40px) / 3);
     background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
     border: 1px solid lightgray;
     border-radius: 16px;
-
+    transition: transform 0.3s;
 }
 
+.format-card:hover{
+    transform: scale(1.05);
+}
 .formats-title {
     margin-bottom: 80px;
 }
@@ -306,6 +319,10 @@ flex-basis: calc((100% - 40px) / 3);
 }
 .carousel-button:hover .carousel-arrow {
    fill: var(--color-primary-light);
+}
+
+.carousel-button.next{
+transform: rotate(180deg);
 }
 
 /*Contact section*/
@@ -423,7 +440,9 @@ flex-basis: calc((100% - 40px) / 3);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0;
     background-color: rgba( 0, 0, 0, 0.5);
+    transition: opacity .3s, visibility .3s;
 }
 
 .backdrop.is-hidden {
@@ -433,8 +452,10 @@ flex-basis: calc((100% - 40px) / 3);
 }
 .modal {
     position: relative;
-    width: 880px;
-    height: 800px;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 800px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
 }
