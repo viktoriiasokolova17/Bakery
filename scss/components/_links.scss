@@ -1,0 +1,12 @@
+.link {
+    color: var(--color-primary-light);
+    line-height: 1.5;
+    /*because 27/18, where 27- line-height, 18- font size*/
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link:hover {
+    color: var(--color-brand-dark);
+    font-weight: 600;
+}

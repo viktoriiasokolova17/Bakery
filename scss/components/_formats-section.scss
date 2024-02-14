@@ -1,0 +1,37 @@
+.formats-container {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.format-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.formats-item {
+    flex-basis: calc((100% - 40px) / 3);
+}
+
+.format-card {
+    padding: 24px;
+    height: 444px;
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
+    border: 1px solid lightgray;
+    border-radius: 16px;
+    transition: transform 0.3s;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
+}
+
+.formats-title {
+    margin-bottom: 80px;
+}
+
+.format-title {
+    font-size: 24px;
+    font-weight: 600;
+}
