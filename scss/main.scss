@@ -24,8 +24,14 @@ body {
     margin: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
 }
 
 ul {
@@ -54,6 +60,7 @@ address {
     height: 1px;
     overflow: hidden;
 }
+
 .container {
     width: 100%;
     max-width: 1288px;
@@ -62,7 +69,7 @@ address {
 }
 
 /*Button*/
-.button{
+.button {
     padding: 16px 32px;
     color: var(--color-primary-light);
     font-weight: 600;
@@ -73,13 +80,23 @@ address {
 
 .button:hover {
     color: var(--color-brand-dark);
-    /* background-color: transparent; */
+    background-color: transparent;
+    border-color: currentColor;
+    /*cursor: not-allowed;*/
+}
+
+.button[disabled] {
+    color: gray;
+    border-color: lightblue;
+    border-color: currentColor;
+    /*cursor: not-allowed;*/
 }
 
 /*Link*/
 .link {
     color: var(--color-primary-light);
-    line-height: 1.5;/*because 27/18, where 27- line-height, 18- font size*/
+    line-height: 1.5;
+    /*because 27/18, where 27- line-height, 18- font size*/
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -113,17 +130,17 @@ address {
 }
 
 .header-menu {
-display: flex;
-gap: 64px;
-flex-grow: 1;
-justify-content: center;
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
 }
 
 
 /*Hero section*/
 .hero-section {
     padding: 272px 0;
-    background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%),url('../images/hero-section-background.jpg');
+    background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url('../images/hero-section-background.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -144,12 +161,14 @@ justify-content: center;
 .advantages-section {
     padding: 16px 0;
     background-color: var(--color-brand-normal);
-    }
+}
+
 .advantages-list {
     display: flex;
     justify-content: space-between;
     gap: 40px;
 }
+
 .advantages-item {
     font-size: 20px;
     font-weight: 300;
@@ -167,7 +186,7 @@ justify-content: center;
 }
 
 .section-title .accent {
-    color:var(--color-brand-dark);
+    color: var(--color-brand-dark);
 }
 
 /*Traditions section*/
@@ -176,13 +195,14 @@ justify-content: center;
 }
 
 .traditions-container {
-    display: flex; 
+    display: flex;
     justify-content: space-between;
     gap: 40px;
 }
 
 .traditions-content {
-    max-width: 710px; ;
+    max-width: 710px;
+    ;
 }
 
 .traditions-title {
@@ -193,6 +213,7 @@ justify-content: center;
     color: var(--color-brand-normal);
     font-weight: 600;
 }
+
 .traditions-text .uppercase {
     text-transform: uppercase;
 }
@@ -213,7 +234,7 @@ justify-content: center;
     width: 352px;
     border: 2px solid var(--color-brand-light);
     content: '';
-    }
+}
 
 .chefs-title::before {
     position: absolute;
@@ -243,8 +264,8 @@ justify-content: center;
 }
 
 .chef-photo {
-  border-radius: 4px 4px 4px 200px;
-  box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 .chef-title {
@@ -256,11 +277,13 @@ justify-content: center;
 .chef-text p {
     margin-bottom: 24px;
 }
+
 .chef-text p:last-child {
     margin-bottom: 0;
 }
+
 /*Formats section*/
-.formats-container{
+.formats-container {
     display: flex;
     gap: 32px;
     align-items: center;
@@ -273,7 +296,7 @@ justify-content: center;
 }
 
 .formats-item {
-flex-basis: calc((100% - 40px) / 3);
+    flex-basis: calc((100% - 40px) / 3);
 }
 
 .format-card {
@@ -285,9 +308,10 @@ flex-basis: calc((100% - 40px) / 3);
     transition: transform 0.3s;
 }
 
-.format-card:hover{
+.format-card:hover {
     transform: scale(1.05);
 }
+
 .formats-title {
     margin-bottom: 80px;
 }
@@ -319,18 +343,20 @@ flex-basis: calc((100% - 40px) / 3);
 .carousel-button:hover {
     background-color: var(--color-primary-dark);
 }
+
 .carousel-button:hover .carousel-arrow {
-   fill: var(--color-primary-light);
+    fill: var(--color-primary-light);
 }
 
-.carousel-button.next{
-transform: rotate(180deg);
+.carousel-button.next {
+    transform: rotate(180deg);
 }
 
 /*Contact section*/
 .contact-section {
     padding-bottom: 96px;
 }
+
 .contact-container {
     display: flex;
     gap: 32px;
@@ -345,6 +371,7 @@ transform: rotate(180deg);
     border-radius: 16px;
     border: none;
 }
+
 /*Footer*/
 .footer {
     padding: 32px 0;
@@ -377,6 +404,7 @@ transform: rotate(180deg);
     right: 0;
     background-image: url(../images/decor-bread-large.png);
 }
+
 .footer-container {
     display: flex;
     gap: 20px;
@@ -409,6 +437,7 @@ transform: rotate(180deg);
 .address-info {
     flex-grow: 1;
 }
+
 .address-link {
     color: var(--color-primary-light);
     font-size: 16px;
@@ -443,7 +472,7 @@ transform: rotate(180deg);
     align-items: center;
     justify-content: center;
     padding: 20px 0;
-    background-color: rgba( 0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     transition: opacity .3s, visibility .3s;
 }
 
@@ -452,6 +481,7 @@ transform: rotate(180deg);
     visibility: hidden;
     pointer-events: none;
 }
+
 .modal {
     position: relative;
     width: 100%;
@@ -471,7 +501,7 @@ transform: rotate(180deg);
 }
 
 /*Form*/
-.form-field{
+.form-field {
     margin-bottom: 32px;
 }
 
@@ -489,12 +519,12 @@ transform: rotate(180deg);
     background-color: transparent;
 }
 
-.form-input:focus{
+.form-input:focus {
     border-color: var(--color-brand-normal);
     outline: none;
 }
 
-.form-input::placeholder{
+.form-input::placeholder {
     color: var(--color-secondary-dark);
     font-size: 16px;
     line-height: 1.17;
@@ -504,7 +534,7 @@ transform: rotate(180deg);
     color: var(--color-primary-dark);
 }
 
-.form-button{
+.form-button {
     display: block;
     margin: 0 auto 24px;
 }
@@ -518,7 +548,7 @@ transform: rotate(180deg);
     text-align: center;
 }
 
-.form-terms-link{
+.form-terms-link {
     color: var(--color-primary-dark);
     text-underline-offset: 2px;
 }
