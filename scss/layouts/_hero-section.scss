@@ -7,12 +7,21 @@
 }
 
 .hero-title {
+    margin-bottom: 0;
     color: var(--color-primary-light);
     text-align: center;
-    font-size: 128px;
+    font-size: 67px;
     font-weight: 900;
 }
 
+@media screen and (min-width: $br-tablet) {
+    .hero-title {
+        font-size: 128px;
+        line-height: 1.5;
+        font-weight: 900;
+    }
+}
 .hero-title .accent {
     color: var(--color-brand-normal);
 }
+
