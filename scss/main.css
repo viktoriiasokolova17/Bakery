@@ -95,6 +95,7 @@ address {
 }
 
 .button {
+  display: block;
   padding: 16px 32px;
   color: var(--color-primary-light);
   font-weight: 600;
@@ -133,9 +134,14 @@ address {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 16px;
 }
 
+@media screen and (min-width: 1280px) {
+  .header {
+    padding-top: 32px;
+  }
+}
 .header-container {
   display: flex;
   align-items: center;
@@ -186,27 +192,33 @@ address {
     height: 24px;
     padding: 0;
     fill: var(--color-primary-light);
-    background-color: red;
+    background-color: rgb(72, 255, 0);
   }
 }
 .hero-section {
-  padding: 272px 0;
+  padding: 124px 0;
   background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero-section-background.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
 }
 
+@media screen and (min-width: 1280px) {
+  .hero-section {
+    padding: 272px 0;
+  }
+}
 .hero-title {
-  margin-bottom: 0;
+  margin-bottom: 48px;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 67px;
   font-weight: 900;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1280px) {
   .hero-title {
+    margin-bottom: 0;
     font-size: 128px;
     line-height: 1.5;
     font-weight: 900;
@@ -216,6 +228,16 @@ address {
   color: var(--color-brand-normal);
 }
 
+.hero-section-button {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section-button {
+    display: none;
+  }
+}
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -237,21 +259,45 @@ address {
 
 .advantages-section {
   padding: 16px 0;
-  background-color: var(--color-brand-normal);
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding: 16px 0;
+    background-color: var(--color-brand-normal);
+  }
+}
 .advantages-list {
   display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 40px;
+  background-color: var(--color-brand-light);
+  border-radius: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
 .advantages-item {
-  font-size: 20px;
+  font-size: 14px;
   font-weight: 300;
   color: var(--color-primary-light);
 }
 
+@media screen and (min-width: 768px) {
+  .advantages-item {
+    color: var(--color-primary-light);
+    font-size: 20px;
+  }
+}
 .section-title {
   font-size: 64px;
   font-weight: 900;
@@ -612,30 +658,10 @@ address {
   outline: none;
 }
 
-.form-input::-moz-placeholder {
-  color: var(--color-secondary-dark);
-  font-size: 16px;
-  line-height: 1.17;
-}
-
-.form-input:-ms-input-placeholder {
-  color: var(--color-secondary-dark);
-  font-size: 16px;
-  line-height: 1.17;
-}
-
 .form-input::placeholder {
   color: var(--color-secondary-dark);
   font-size: 16px;
   line-height: 1.17;
-}
-
-.form-input:focus::-moz-placeholder {
-  color: var(--color-primary-dark);
-}
-
-.form-input:focus:-ms-input-placeholder {
-  color: var(--color-primary-dark);
 }
 
 .form-input:focus::placeholder {
@@ -659,4 +685,4 @@ address {
 .form-terms-link {
   color: var(--color-primary-dark);
   text-underline-offset: 2px;
-}/*# sourceMappingURL=main.css.map */
+}
