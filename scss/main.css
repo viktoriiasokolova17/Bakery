@@ -45,11 +45,17 @@ body {
   color: var(--color-primary-dark);
   background-color: var(--color-primary-light);
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   margin: 0;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
 h1,
 h2,
 h3,
@@ -75,9 +81,26 @@ address {
 }
 
 .section {
-  padding: 48px 0;
+  padding: 20px 0;
 }
 
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 48px 0;
+  }
+}
+.section-title {
+  font-size: 32px;
+  font-weight: 900px;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    font-size: 64px;
+    line-height: 1.3;
+  }
+}
 .container {
   width: 100%;
   max-width: 1288px;
@@ -208,6 +231,11 @@ address {
     padding: 272px 0;
   }
 }
+@media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/hero-section-background@2x.jpg");
+  }
+}
 .hero-title {
   margin-bottom: 48px;
   color: var(--color-primary-light);
@@ -313,11 +341,27 @@ address {
 }
 
 .traditions-section {
-  padding-top: 96px;
+  padding-top: 40px;
 }
 
+@media screen and (min-width: 768px) {
+  .traditions-section {
+    padding-top: 96px;
+  }
+}
+.traditions-section-image {
+  border-radius: 400px 400px 0px 0px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .traditions-section-image {
+    display: block;
+  }
+}
 .traditions-container {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   gap: 40px;
 }

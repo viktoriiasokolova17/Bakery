@@ -1,9 +1,27 @@
 .traditions-section {
-    padding-top: 96px;
+    padding-top: 40px;
 }
+
+ @media screen and (min-width: $bp-tablet) {
+    .traditions-section{
+        padding-top: 96px;
+     }
+ }
+
+.traditions-section-image {
+    border-radius: 400px 400px 0px 0px;
+    display: none;
+}
+
+ @media screen and (min-width: $bp-tablet) {
+    .traditions-section-image {
+     display: block;
+     }
+ }
 
 .traditions-container {
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 40px;
 }
