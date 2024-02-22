@@ -4,9 +4,23 @@
     align-items: center;
 }
 
-.formats-section-container{
+.formats-section-container {
     overflow: hidden;
 }
+
+.formats-section-list {
+    margin-bottom: 32px;
+}
+
+.formats-section-button {
+    display: none; 
+}
+
+ @media screen and (min-width: $bp-tablet) {
+    .formats-section-button {
+        display: flex;
+     }
+ }
 
 /*.format-list {
     display: flex;
