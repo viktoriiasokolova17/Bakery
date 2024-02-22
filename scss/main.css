@@ -98,7 +98,7 @@ address {
 }
 .section-title {
   font-size: 32px;
-  font-weight: 900px;
+  font-weight: 900;
   line-height: 1.5;
 }
 
@@ -627,17 +627,48 @@ address {
 
 .contact-container {
   display: flex;
-  gap: 32px;
+  flex-direction: column;
+  gap: 24x;
 }
 
-.contact-title {
+@media screen and (min-width: 768px) {
+  .contact-container {
+    flex-direction: row;
+    gap: 32px;
+  }
+}
+.contact-section-title {
   margin-bottom: 16px;
+}
+
+.form-field {
+  margin-bottom: 24px;
 }
 
 .contact-map {
   flex-shrink: 0;
+  height: 176px;
+  margin: 0 -24px;
   border-radius: 16px;
   border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-map {
+    margin: auto;
+    width: 320px;
+    height: 500px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .contact-map {
+    width: 600px;
+    height: 595px;
+  }
+}
+.contact-section-button {
+  display: block;
+  margin: 0 auto 16px;
 }
 
 .footer {
