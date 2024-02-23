@@ -64,14 +64,12 @@
 
 @media screen and (max-width: $bp-desktop) {
     .button-burger {
-        //display: none;
         display: block;
         background-color: transparent;
-        //border: none;
         width: 24px;
         height: 24px;
         padding: 0;
         fill: var(--color-primary-light);
-        background-color: rgb(72, 255, 0);
+        background-color: var(--color-primary-light);
     }
 }

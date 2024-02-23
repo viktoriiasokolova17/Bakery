@@ -222,7 +222,7 @@ address {
     height: 24px;
     padding: 0;
     fill: var(--color-primary-light);
-    background-color: rgb(72, 255, 0);
+    background-color: var(--color-primary-light);
   }
 }
 .hero-section {
